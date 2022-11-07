@@ -18,10 +18,10 @@ export default function Crew () {
     const links = [...document.querySelectorAll('.crew__link')]
 
     setTimeout(() => {
-      links[id].classList.remove('selected')
+      // links[id].classList.remove('selected')
       id < 3 ? setId(id + 1) : setId(0)
-      links[id].classList.add('selected')
-    }, 7000);
+      // links[id].classList.add('selected')
+    }, 2500);
 
     links.forEach(el => el.classList.remove('selected'))
     links[id].classList.add('selected')
