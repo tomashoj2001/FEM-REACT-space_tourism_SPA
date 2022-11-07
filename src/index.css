@@ -13,6 +13,10 @@
   /* outline: red 1px solid; */
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   color: rgb(200, 200, 200);
   font-family: var(--Font);
