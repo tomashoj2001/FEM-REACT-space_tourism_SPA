@@ -302,6 +302,7 @@ main {
   }
   
   .burger {
+    display: block;
     height: 2rem;
     position: absolute;
     right: 1rem;
