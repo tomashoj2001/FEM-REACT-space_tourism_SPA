@@ -1,15 +1,20 @@
 import './technology.css'
 import { useState } from 'react'
 import json from '../starter-code/data.json'
-import launch from '../starter-code/assets/technology/image-launch-vehicle-portrait.jpg'
-import space from '../starter-code/assets/technology/image-space-capsule-portrait.jpg'
-import spaceport from '../starter-code/assets/technology/image-spaceport-portrait.jpg'
+import launchPortrait from '../starter-code/assets/technology/image-launch-vehicle-portrait.jpg'
+import launchLandscape from '../starter-code/assets/technology/image-launch-vehicle-landscape.jpg'
+import spaceportPortrait from '../starter-code/assets/technology/image-spaceport-portrait.jpg'
+import spaceportLandscape from '../starter-code/assets/technology/image-spaceport-landscape.jpg'
+import spaceCapsulePortrait from '../starter-code/assets/technology/image-space-capsule-portrait.jpg'
+import spaceCapsuleLandscape from '../starter-code/assets/technology/image-space-capsule-landscape.jpg'
 import TechnologyNav from './TechnologyNav'
 
 const text = json.technology
 
 export default function Technology () {
-  const image = [launch, space, spaceport]
+  const portrait = [launchPortrait, spaceportPortrait, spaceCapsulePortrait]
+  const landscape = [launchLandscape, spaceportLandscape, spaceCapsuleLandscape]
+  
   const [id, setId] = useState(0)
 
   return (
@@ -24,7 +29,11 @@ export default function Technology () {
           <h2>{text[id].name}</h2>
           <p>{text[id].description}</p>
         </div>
-        <img src={image[id]} alt={text[id].name}/>
+
+        <img
+          src={window.innerWidth > 800 ? portrait[id] : landscape[id]}
+          alt={text[id].name}
+        />
       </section>
     </main>
   )
