@@ -167,10 +167,16 @@
 }
 
 @media screen and (max-width: 550px) {
+  html, body {
+    height: 100vh;
+    overflow: hidden;
+  }
   .tech__body {
     background-image: url(/src/starter-code/assets/technology/background-technology-mobile.jpg);
     /* margin-top: -7rem; */
     /* height: auto; */
+    /* margin-bottom: 0; */
+    height: 102vh;
   }
   
   .tech__container {
@@ -181,6 +187,7 @@
     /* flex-direction: column-reverse; */
     /* justify-content: center; */
     /* align-items: center; */
+    /* margin-bottom: 0; */
   }
   
   .tech__nav {
@@ -217,7 +224,7 @@
   }
   
   .tech__div {
-    height: auto;
+    /* height: auto; */
     width: 90%;
     /* margin-left: -8rem; */
     /* margin: auto; */

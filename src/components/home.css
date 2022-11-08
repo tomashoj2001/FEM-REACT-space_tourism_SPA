@@ -140,8 +140,13 @@ h1.home__title {
 }
 
 @media screen and (max-width: 550px) {
+  html, body {
+    height: 100vh;
+    overflow: auto;
+  }
   .home__body {
     background-image: url(/src/starter-code/assets/home/background-home-mobile.jpg);
+    height: 102vh;
     /* display: grid; */
     /* grid-template-columns: 1fr; */
     /* gap: 0rem; */
