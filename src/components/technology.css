@@ -168,7 +168,7 @@
 
 @media screen and (max-width: 550px) {
   html, body {
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
   }
   .tech__body {
