@@ -166,6 +166,7 @@
     /* width: 100vw; */
     /* display: flex; */
     flex-direction: column-reverse;
+    margin-bottom: 20rem;
     /* align-items: flex-start; */
     /* justify-content: flex-start; */
   }
