@@ -193,10 +193,10 @@
 }
 
 @media screen and (max-width: 550px) {
-  html, body {
+  /* html, body {
     min-height: fit-content;
     overflow: auto;
-  }
+  } */
   .destination__body {
     background-image: url(/src/starter-code/assets/destination/background-destination-mobile.jpg);
     /* margin-top: -7rem; */
