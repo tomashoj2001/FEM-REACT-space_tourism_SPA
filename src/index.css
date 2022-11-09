@@ -385,6 +385,7 @@ main {
     /* width: 100vw; */
     min-height: 100vh;
     /* background-size: cover; */
-    overflow-x: auto;
+    overflow-x: hidden;
+    overflow-y: visible;
   }
 }

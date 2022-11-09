@@ -140,9 +140,14 @@ h1.home__title {
 }
 
 @media screen and (max-width: 550px) {
-  html, body {
+  body {
     min-height: 100vh;
-    overflow: hidden;
+    min-height: fill-available;
+    min-height: -webkit-fill-available;
+  }
+  html {
+    height: fill-available;
+    height: -webkit-fill-available;
   }
   .home__body {
     background-image: url(/src/starter-code/assets/home/background-home-mobile.jpg);

@@ -169,14 +169,14 @@
 @media screen and (max-width: 550px) {
   html, body {
     min-height: 100vh;
-    overflow: hidden;
+    overflow: visible;
   }
   .tech__body {
     background-image: url(/src/starter-code/assets/technology/background-technology-mobile.jpg);
     /* margin-top: -7rem; */
     /* height: auto; */
     /* margin-bottom: 0; */
-    height: 102vh;
+    /* height: 102vh; */
   }
   
   /* .tech__container { */
@@ -257,6 +257,11 @@
     margin: 1rem 0;
   }
   
+  .tech__container {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
   .tech__container img {
     width: 101vw;
     height: auto;
